@@ -3,6 +3,7 @@
 Um exemplo simples de como funciona uma aplicação REST em Python.
 Responde requisições GET, POST, PUT e DELETE.
 Possui rotas protegidas para uso autorizado por token de acesso.
+Inseri um arquivo HTML apenas para caráter de informação.
 
 Requisitos:
  - Python 3.9.1
