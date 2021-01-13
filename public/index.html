@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo REST API em Python</title>
+</head>
+<body>
+  <div>
+    <h1>🔁 Exemplo REST API em Python 🐍</h1>
+    <hr>
+    <b>Login padrão = login: Admin, senha: 123</b><br><br>
+    <small>Utilize o Postman para testar melhor todas as rotas! ;)</small>
+    <br>
+    <table border="1">
+      <thead>
+        <th>Rota</th>
+        <th>Método da requisição</th>
+        <th>Serviço</th>
+        <th>Necessita de autorização</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>👉 /produtos</td>
+          <td>GET</td>
+          <td>Retorna todos os Produtos</td>
+          <td>NÃO</td>
+        </tr>
+        <tr>
+          <td>👉 /produto?id=int</td>
+          <td>GET</td>
+          <td>Retorna um Produto específico</td>
+          <td>NÃO</td>
+        </tr>
+        <tr>
+          <td>👉 /produto <i>(BODY descricao=str, preco=float)</i></td>
+          <td>POST</td>
+          <td>Adiciona um novo Produto</td>
+          <td>SIM <i>(HEADERS token=str)</i></td>
+        </tr>
+        <tr>
+          <td>👉 /produto <i>(BODY id=int, descricao=str, preco=float)</i></td>
+          <td>PUT</td>
+          <td>Edita um Produto específico</td>
+          <td>SIM <i>(HEADERS token=str)</i></td>
+        </tr>
+        <tr>
+          <td>👉 /produto <i>(BODY id=int</i>)</td>
+          <td>DELETE</td>
+          <td>Exclui um Produto específico</td>
+          <td>SIM <i>(HEADERS token=str)</i></td>
+        </tr>
+        <tr>
+          <td>👉 /login <i>(BODY login=str, senha=str)</i></td>
+          <td>POST</td>
+          <td>Retorna um token de autorização</td>
+          <td>NÃO</td>
+        </tr>
+      </tbody>
+    </table>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr>
+    Desenvolvido por Vinícius Nogueira 😁 <br>
+    <ul>
+      <li><a href="https://github.com/viniciusnogueiras" target="__blank">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/vinícius-nogueira-de-souza-2554701b7" target="__blank">Linkedin</a></li>
+    </ul>
+  </div>
+</body>
+</html>
